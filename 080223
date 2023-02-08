@@ -78,6 +78,7 @@ Packet Tracer :
    >   https://www.instructables.com/How-to-Configure-DHCP-in-Cisco-Packet-Tracer/
    
  ____________________________________________________________
+L2 Security 
  
- 
- 
+ DHCP smooth (https://help.smoothwall.net/FilterFirewall/Content/4Services/7DHCP/2DHCPServer/Manage.htm)
+ DHCP tusk   (https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SXF/native/configuration/guide/swcg/snoodhcp.pdf)
