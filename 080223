@@ -1,0 +1,83 @@
+IPv4:
+
+256 128 64 32 16 8 4 2 1
+
+---.---.---.---
+4 byte %8bit.8bit.8bit.8bit%
+
+###
+1 - host
+0 - alhálózat
+x - bármi mehet oda
+###
+
+//
+A: 0.0.0.0 (0.x.x.x)---> 127.255.255.255
+  private: 10.0.0.0 ----> 10.
+  
+B: 128.0.0.0 (1.0.x.x)----> 191.255.255.255
+  private: 172.16.0.0 ----> 172.32.255.255
+  
+C: 192.0.0.0 (1.1.0.x)----> 223.255.255.255
+  private: 192.168.0.0 ----> 192.168.255.255
+  
+D: 224.0.0.0 (1.1.1.0)----> 234.255.255.255
+  private: NINCS
+\\
+
+%%%
+192.168.1.23 /24
+255.255.255.0
+%%%
+
+NetMask: (https://www.aelius.com/njh/subnet_sheet.html)
+
+255.255.255.0     (/24)
+255.255.255.252   (/30)
+255.255.255.224	  (/27)
+stb...
+______________________________
+ALHÁLÓZATRA BONTÁS
+
+
+                            128|64|32|16|8|4|2|1
+255.255.255.0               .[0]|0|0|0|0|0|0|0
+                             [0]|0|0|1|0|0|0|1
+                              
+192.168.1.17                                            
+(HA 1 bitet ellopunk az alhálózattól)       192.168.1. 0 ----> 128
+                                                         
+                                          
+                             
+                             
+                                                      0
+(2 bit)                      192.168.1. 0 ----> 63 <
+                                                      32
+                                                      33
+                                                    <
+                                                      63
+
+_________________________
+
+DHCP (https://learn.microsoft.com/en-us/windows-server/troubleshoot/dynamic-host-configuration-protocol-basics)
+  IPv4
+  NetMask
+  Default Getaway
+  DNS
+  kilogandó címek
+  
+              I.   DHCP discover  ()
+              II.  DHCP offer     ()
+              III. DHCP request   ()
+              IV.  DHCP ack       ()
+    Host   <  --------------- >     Server
+    
+    
+Packet Tracer :
+
+   >   https://www.instructables.com/How-to-Configure-DHCP-in-Cisco-Packet-Tracer/
+   
+ ____________________________________________________________
+ 
+ 
+ 
