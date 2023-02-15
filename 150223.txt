@@ -13,3 +13,11 @@
                     \
                     \/
                     
+
+https://www.connecteddots.online/resources/cisco-reference/ip-dhcp-excluded-address
+
+https://www.computernetworkingnotes.com/ccna-study-guide/how-to-configure-dhcp-relay-agent-on-cisco-routers.html
+
+https://szit.hu/doku.php?id=oktatas:halozat:cisco:router
+
+https://docplayer.hu/17289018-Cisco-packet-tracer-parancs-segedlet.html
