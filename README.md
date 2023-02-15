@@ -14,3 +14,11 @@ https://contenthub.netacad.com/itn/6.1.1
 _________________________________________
 https://contenthub.netacad.com/itn/7.1.1
 _________________________________________
+https://www.connecteddots.online/resources/cisco-reference/ip-dhcp-excluded-address
+____________________________________________________________________________________
+https://www.computernetworkingnotes.com/ccna-study-guide/how-to-configure-dhcp-relay-agent-on-cisco-routers.html
+________________________________________________________________________________________________________________
+https://szit.hu/doku.php?id=oktatas:halozat:cisco:router
+________________________________________________________
+https://docplayer.hu/17289018-Cisco-packet-tracer-parancs-segedlet.html
+_______________________________________________________________________
