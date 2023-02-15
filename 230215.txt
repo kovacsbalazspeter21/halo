@@ -1,0 +1,15 @@
+---------->           DA|SA|L/T|S-IPADDR|D-IPADDR       :Broadcast
+                  
+                  FFFF  128FA   0.0.0.0   255.255.****
+                         /      0.0.0.0
+                        /       
+ DHCP DISCOVER         |
+ -||- OFFER    ---------
+ -||- REQUEST ---      |\
+ -||- ACK        \     |\
+                  \   \/\/
+            <-------- DA|ABC127|10.7.1.23/24|0.0.0.0
+                   \
+                    \
+                    \/
+                    
