@@ -21,3 +21,71 @@ https://www.computernetworkingnotes.com/ccna-study-guide/how-to-configure-dhcp-r
 https://szit.hu/doku.php?id=oktatas:halozat:cisco:router
 
 https://docplayer.hu/17289018-Cisco-packet-tracer-parancs-segedlet.html
+
+
+IPv6
+  - 128 Bit
+  - HexaDecimális
+  - Karakter alkotói: [0;1;2;3;4;5,6,7;8;9;A;B;C;D;E;F]
+  
+  
+  * full verzió     ||
+                    \/
+        2001:0db8:0cad:b812:1234:5678:9abc:defa     /64
+  
+  * alhálózatok elhagyásával ábrázolt verzió  ||
+                                              \/
+                                  2001: db8:acad:1::18   /64
+
+
+pl.:
+                alhálózati cím  |     host cím          | /64 | /64
+             ___________________|___________________       
+    -full-   2001:0000:0001:0002:0000:0000:0000:0db8    |   /128
+    -0mit-   2001:0:1:2:0:0:0:db8                       |
+    -comp-   2001:1:2::db8                              |
+        
+Egyedi címzés: (UNICAST)
+  * Global Unicast address (Globális egyedi cím)
+  
+  - globális unicast cím megegyezik a publikus IPv4 címekkel
+  
+  -[2001]-      /64
+  
+  
+        
+Adatkapcsolati szinten helyi (LINK-LOCAL)
+   * 
+    
+   - 
+   
+   -[fe80]-     /10
+   
+ Visszacsatolás (LOOPBACk)
+    * Saját magának küldhessen csomagot (ezt fizikai interfészhez nem használjuk!!)
+    * Az utolsó bit 1-esét kivéve csupa nulla, ami ::1/128 vagy tömörített formában csak ::1.
+    
+    -[::1/128]-
+Meghatározatlan (UNSPECIFIED)
+    * Csupa nullákból áll
+    * Nem rendelhető hozzá interfészhez és IPv6 csomagnak csak forráscíme lehet.
+    
+    -[::/128]-
+ 
+ Egyedi helyi (UNIQUE LOCAL)
+    * Beágyazott IPv4
+    * Az utolsó egyedi címtípus a beágyazott IPv4-cím. Az ilyen címeket az IPv4-ről IPv6-ra történő átállás elősegítésére használjuk.
+    
+    -[fc00::/7]-
+ 
+ 
+ IPv6 Konfiguráció:
+ 
+      !!!!(config)#ipv6 global-unicast routing!!!!
+ 
+    * R1(config)# int g0/0
+    * R1(config-if)# ipv6 address 2001:db8:acad:2::1 /64
+    * R1(config-if)# noshutdown       (vagy használható a "clock rate" parancs is "56000" ami lehetővé teszi, hogy a szolgáltató nélkűl is futathassuk) [clock rate 56000]
+    * R1(config-if)# exit
+    
+ 
