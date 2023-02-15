@@ -6,7 +6,7 @@ https://learn.microsoft.com/en-us/windows-server/troubleshoot/dynamic-host-confi
 ________________________________________________________________________________________________________
 https://www.instructables.com/How-to-Configure-DHCP-in-Cisco-Packet-Tracer/
 ___________________________________________________________________________
-https://help.smoothwall.net/FilterFirewall/Content/4Services/7DHCP/2DHCPServer/Manage.htm
+https://help.smoothwall.net/FilterFirewall/Content/4Services/7DHCP/2DHCPServer/Manage.html
 __________________________________________________________________________________________
 https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SXF/native/configuration/guide/swcg/snoodhcp.pdf
 ________________________________________________________________________________________________________________________
