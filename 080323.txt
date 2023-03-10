@@ -1,0 +1,76 @@
+IPv6 Global Unicast Address
+
+global routing prefix|subnet id|interface id
+
+IPv6 hálózati címek
+  egyedi címzés
+  
+                                                          STATELESS
+                                            SLAAC only                SLAAC & DHCPv6
+    
+                Minden amire szükség van.                          Az IPv6 dinamikus címzésének kialakítása
+        [Prefix, Prefix-length, Default Getaway]                  a SLAAC használata a globális unicast cím (GUA) generálására,
+                                                                  és a Stateless DHCPv6 a DNS és a tartománynév biztosítására.
+    
+                                                           STATEFUL   
+                                                            DHCPv6
+
+
+
+IPv6 GUA ASSIGNMENT
+
+
+THREE RA Message Flags
+
+    - [A FLAG] (jelző) - Automatikus konfiguráció (StateLess Address Auto Configuration) [SLAAC]
+
+    - [O FLAG] (jelző) - Egyébb konfiguráció (StateLess Address Other Configuration) [SLAOC]
+
+    - [M FLAG] (jelző) - Kezelt címkonfiguráció (StateLess Managed Address Configuration) [SLMAC]
+
+
+SLAAC
+  SLAAC Overview
+  
+  
+  Enabling SLAAC
+  
+      link-local ipv6 address
+          [fe80::1]
+      gua/subnet
+      
+      ipv6 all-nodes group 
+          [ff02::1]
+          
+          
+  Show ipv6 interface
+  
+  
+  SLAAC only method
+  
+      A = 1
+      O = 0
+      M = 0
+  
+  MTU
+  
+  ipconfig
+  default getaway
+  
+  
+ICMPv6 RS Messages
+
+Duplicate Address Detection
+
+DHCPv6 Operation Steps
+
+DHCPv6
+Stateless DHCPv6 Operation
+
+Enable Stateless DHCPv6 on an Interface
+
+_____________________________________________________
+                                                    |
+HSRP                                                |
+                                                    |
+_____________________________________________________
