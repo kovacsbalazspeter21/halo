@@ -1,0 +1,24 @@
+                  DMZ -[Demilitarizált zóna]-
+                  /\                                                                                                   ______________
+   __________    /  ___  ESA -[Email Security Appliance]-    \                                                        |              |
+  |          |  /    \                                        ___  IPS  -[Intrusion Prevention System]- __________    |              |
+  | Internet |        \_  WSA -[Secure Web Appliance]-       /                                                        |______________|
+  |__________|                                                     IDS -[Intrusion Detection System]-                         ENDz -[Endpoint Protection]-
+        ___________________________________________  ___________________________________________
+                                                   \/
+                                            Network Security
+             
+      
+ - Virus
+ 
+ - Troians
+ 
+ - Worm
+ 
+ BYOD -[Bring Your Own Device]-
+ 
+ NAC -[Network Access Control]-
+ 
+ NSD -[Network Security Devices]-
+ 
+ AA Components -[]-
