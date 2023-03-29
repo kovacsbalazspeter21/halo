@@ -16,9 +16,56 @@
  - Worm
  
  BYOD -[Bring Your Own Device]-
- 
+        BYOD (bring your own device) is a policy that allows employees in an organization 
+        to use their personally owned devices for work-related activities.
+        
  NAC -[Network Access Control]-
- 
+        Network access control (NAC) is a security solution that enforces policy on devices
+        that access networks to increase network visibility and reduce risk.
+        
  NSD -[Network Security Devices]-
- 
- AA Components -[]-
+        NSD Security. This page is to summarize and allow recording ideas
+        related to security and privacy for Network Service Discovery.
+        
+ AA Components -[Auto-Attendant Components]-
+AAA -[Authentication, Authorization, and Accounting]-
+
+    LOCAL AAA Authentication:
+        Local AAA. Local AAA means that you are performing AAA without the use of an external database. 
+        When performing local AAA, you can authenticate with a username and password 
+        that is part of the configuration of the security appliance.
+      
+    SERVER-BASED AAA Authentication:
+         An AAA server is a server program that handles user requests for access to computer resources and, 
+         for an enterprise, provides authentication, authorization, and accounting (AAA) services. 
+         Authentication is the process of identifying an individual, usually based on a username and password.
+    
+   Switch Attack Categories: """https://www.ccexpert.us/multilayer-switched/attacks-on-switch-devices.html"""
+        
+        Attack Method                           Description                                                   Steps to Mitigation
+        
+        MAC Layer Attacks
+        
+        MAC address flooding          Frames with unique, invalid source MAC addresses flood the switch,        Port security.
+                                      exhausting content addressable memory (CAM) table space, disallowing      MAC address VLAN access maps.
+                                      new entries from valid hosts. Traffic to valid hosts is subsequently
+                                      flooded out all ports.
+                                      
+        VLAN Attacks
+        
+        VLAN hopping                  By altering the VLAN ID on packets encapsulated for trunking, an attacking    Tighten up trunk configurations
+                                      device can send or receive packets on various VLANs, bypassing                and the negotiation state of unused ports.
+                                      Layer 3 security measures.                                                    Place unused ports in a common VLAN.
+                                      
+        Attacks between               Devices may need protection from one another,                                 Implement private VLANs (PVLANs).
+        devices                       even though they are on a common VLAN.
+        on a common VLAN              This is especially true on serviceprovider segments
+                                      that support devices from multiple customers.
+        
+        
+        
+        
+        
+        
+        
+   
