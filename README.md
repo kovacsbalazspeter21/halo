@@ -30,3 +30,5 @@ https://computernetworking747640215.wordpress.com/2018/07/05/how-to-configure-dh
 ___________________________________________________________________________________________________________
 https://community.cisco.com/t5/switching/line-vty-0-15-and-the-password-command/td-p/4542995
 ____________________________________________________________________________________________
+https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/
+_____________________________________________________________________________________________________________________________
