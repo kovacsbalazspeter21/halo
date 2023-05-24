@@ -24,3 +24,9 @@ https://docplayer.hu/17289018-Cisco-packet-tracer-parancs-segedlet.html
 ________________________________________________________________________
 https://www.ccexpert.us/multilayer-switched/attacks-on-switch-devices.html
 __________________________________________________________________________
+https://szit.hu/doku.php?id=oktatas:halozat:cisco:vlan_hasznalata
+_________________________________________________________________
+https://computernetworking747640215.wordpress.com/2018/07/05/how-to-configure-dhcp-server-in-packet-tracer/
+___________________________________________________________________________________________________________
+https://community.cisco.com/t5/switching/line-vty-0-15-and-the-password-command/td-p/4542995
+____________________________________________________________________________________________
