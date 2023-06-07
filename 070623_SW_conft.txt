@@ -14,7 +14,7 @@ hostname wmtech
 !
 ip domain-name wmszki.hu
 !
-username wmtech secret 5 $1$mERr$4dpRATIgxQacPVK0CfNV4/
+username admin secret cisco
 !
 !
 !
