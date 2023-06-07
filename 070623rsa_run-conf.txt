@@ -1,0 +1,150 @@
+wmtech(config)#cry key gen rsa
+The name for the keys will be: wmtech.wmszki.hu
+Choose the size of the key modulus in the range of 360 to 4096 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...
+[OK] (elapsed time was 3 seconds)
+
+wmtech(config)#do show running-config
+Building configuration...
+
+Current configuration : 3134 bytes
+!
+! Last configuration change at 00:49:44 UTC Mon Mar 1 1993 by admin
+!
+version 15.0
+no service pad
+no service timestamps debug uptime
+no service timestamps log uptime
+no service password-encryption
+!
+hostname wmtech
+!
+boot-start-marker
+boot-end-marker
+!
+!
+username admin secret 5 $1$6Qzt$4hurAwp.zDbC0PMrq.Tma0
+no aaa new-model
+system mtu routing 1500
+!
+!
+ip domain-name wmszki.hu
+!
+!
+crypto pki trustpoint TP-self-signed-2435916928
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-2435916928
+ revocation-check none
+ rsakeypair TP-self-signed-2435916928
+!
+!
+crypto pki certificate chain TP-self-signed-2435916928
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 32343335 39313639 3238301E 170D3933 30333031 30303031
+  31375A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 34333539
+  31363932 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  8100BF29 FE55597D BC5A3B93 5DD091E9 8CDA03BD 7ACFD17C C350F7B6 1BB87E74
+  977CCC4B 9A609691 8D94C18B BF85017B 43C9F2D9 8972F775 75ACE99B DF298B41
+  37026EAE C499ED6A 46D63363 9764FA2C CBE1D49A 0DE197C8 F7F2567A E10ED141
+  40465E1B E7243068 8BC981A7 8C4DBCD5 AA4DC59C 5FE7BD7C 84A6015A 3FCE5A42
+  ADD50203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603
+  551D2304 18301680 14C092CE A9CE130E B1B59028 BECF3AAD 7F64C201 48301D06
+  03551D0E 04160414 C092CEA9 CE130EB1 B59028BE CF3AAD7F 64C20148 300D0609
+  2A864886 F70D0101 05050003 81810094 46380043 7F730022 76E170E3 1172AB69
+  0487450F B8906842 380481D5 A730AB66 A3C1E5F1 95B80B67 92FD630B E17C58FC
+  78C77AE7 07409819 0CB5E35A BB651A90 8B073D4E 9CCD49E1 BBE45D77 1EDD7895
+  CC7BD62C BF77E978 F689F611 758EE7B0 23479385 D564F12F 52777D6E 7731F8C3
+  A0A646FA B18636EB 59C1BA16 68DC94
+        quit
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface GigabitEthernet0/5
+!
+interface GigabitEthernet0/6
+!
+interface GigabitEthernet0/7
+!
+interface GigabitEthernet0/8
+!
+interface GigabitEthernet0/9
+!
+interface GigabitEthernet0/10
+!
+interface GigabitEthernet0/11
+!
+interface GigabitEthernet0/12
+!
+interface GigabitEthernet0/13
+!
+interface GigabitEthernet0/14
+!
+interface GigabitEthernet0/15
+!
+interface GigabitEthernet0/16
+!
+interface GigabitEthernet0/17
+!
+interface GigabitEthernet0/18
+!
+interface GigabitEthernet0/19
+!
+interface GigabitEthernet0/20
+!
+interface GigabitEthernet0/21
+!
+interface GigabitEthernet0/22
+!
+interface GigabitEthernet0/23
+!
+interface GigabitEthernet0/24
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan88
+ ip address 192.168.1.2 255.255.255.0
+!
+ip http server
+ip http secure-server
+!
+vstack
+!
+line con 0
+ login local
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+end
