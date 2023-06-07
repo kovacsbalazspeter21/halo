@@ -14,11 +14,17 @@ hostname wmtech
 !
 ip domain-name wmszki.hu
 !
-username admin secret cisco
+enable secret cisco
 !
+username admin secret class
+!
+no ip domain-lookup
+ip domain-name wmszki.hu
+ip ssh ver 2
 !
 !
 spanning-tree mode pvst
+no spanning-tree optimized bpdu tranmission
 spanning-tree extend system-id
 !
 interface FastEthernet0/1
@@ -107,10 +113,7 @@ control-plane
 banner motd ^Cszia^C
 !
 line con 0
-login local
-line aux 0
-
-!
+ login local
 line vty 0 4
  login local 
  transport input ssh
@@ -119,8 +122,6 @@ line vty 5 15
  transport input ssh
 !
 !
-!
-scheduler allocate 20000 1000
 !
 end
 
