@@ -1,0 +1,170 @@
+wmtech#no service pad
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#no service timestamps debug uptime
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#no service timestamps log uptime
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#no service password-encryption
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#!
+wmtech#hostname wmtech
+        ^
+% Invalid input detected at '^' marker.
+
+wmtech#!
+wmtech#boot-start-marker
+Translating "boot-start-marker"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+wmtech#boot-end-marker
+Translating "boot-end-marker"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+wmtech#!
+wmtech#!
+wmtech#username admin secret 5 $1$6Qzt$4hurAwp.zDbC0PMrq.Tma0
+        ^
+% Invalid input detected at '^' marker.
+
+wmtech#no aaa new-model
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#system mtu routing 1500
+           ^
+% Invalid input detected at '^' marker.
+
+wmtech#!
+wmtech#!
+wmtech#ip domain-name wmszki.hu
+           ^
+% Invalid input detected at '^' marker.
+
+wmtech#!
+wmtech#!
+wmtech#crypto pki trustpoint TP-self-signed-2435916928
+                  ^
+% Invalid input detected at '^' marker.
+
+wmtech# enrollment selfsigned
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech# subject-name cn=IOS-Self-Signed-Certificate-2435916928
+         ^
+% Invalid input detected at '^' marker.
+
+wmtech# revocation-check none
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech# rsakeypair TP-self-signed-2435916928
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#!
+wmtech#!
+wmtech#crypto pki certificate chain TP-self-signed-2435916928
+                  ^
+% Invalid input detected at '^' marker.
+
+wmtech# certificate self-signed 01
+         ^
+% Invalid input detected at '^' marker.
+
+wmtech#$30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$6174652D 32343335 39313639 3238301E 170D3933 30333031 30303031
+  69666963 6174652D 32343335 39313639 3238301E 170D3933 30333031 30303031
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  31375A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$656C662D 5369676E 65642D43 65727469 66696361 74652D32 34333539
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 34333539
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  31363932 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$FE55597D BC5A3B93 5DD091E9 8CDA03BD 7ACFD17C C350F7B6 1BB87E74
+  8100BF29 FE55597D BC5A3B93 5DD091E9 8CDA03BD 7ACFD17C C350F7B6 1BB87E74
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$9A609691 8D94C18B BF85017B 43C9F2D9 8972F775 75ACE99B DF298B41
+  977CCC4B 9A609691 8D94C18B BF85017B 43C9F2D9 8972F775 75ACE99B DF298B41
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$C499ED6A 46D63363 9764FA2C CBE1D49A 0DE197C8 F7F2567A E10ED141
+  37026EAE C499ED6A 46D63363 9764FA2C CBE1D49A 0DE197C8 F7F2567A E10ED141
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$E7243068 8BC981A7 8C4DBCD5 AA4DC59C 5FE7BD7C 84A6015A 3FCE5A42
+  40465E1B E7243068 8BC981A7 8C4DBCD5 AA4DC59C 5FE7BD7C 84A6015A 3FCE5A42
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603
+  ADD50203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603
+   ^
+% Invalid input detected at '^' marker.
+
+wmtech#$18301680 14C092CE A9CE130E B1B59028 BECF3AAD 7F64C201 48301D06
+  551D2304 18301680 14C092CE A9CE130E B1B59028 BECF3AAD 7F64C201 48301D06
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$04160414 C092CEA9 CE130EB1 B59028BE CF3AAD7F 64C20148 300D0609
+  03551D0E 04160414 C092CEA9 CE130EB1 B59028BE CF3AAD7F 64C20148 300D0609
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$F70D0101 05050003 81810094 46380043 7F730022 76E170E3 1172AB69
+  2A864886 F70D0101 05050003 81810094 46380043 7F730022 76E170E3 1172AB69
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$B8906842 380481D5 A730AB66 A3C1E5F1 95B80B67 92FD630B E17C58FC
+  0487450F B8906842 380481D5 A730AB66 A3C1E5F1 95B80B67 92FD630B E17C58FC
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$07409819 0CB5E35A BB651A90 8B073D4E 9CCD49E1 BBE45D77 1EDD7895
+  78C77AE7 07409819 0CB5E35A BB651A90 8B073D4E 9CCD49E1 BBE45D77 1EDD7895
+  ^
+% Invalid input detected at '^' marker.
+
+wmtech#$BF77E978 F689F611 758EE7B0 23479385 D564F12F 52777D6E 7731F8C3
+  CC7BD62C BF77E978 F689F611 758EE7B0 23479385 D564F12F 52777D6E 7731F8C3
+   ^
+% Invalid input detected at '^' marker.
+
+wmtech#  A0A646FA B18636EB 59C1BA16 68DC94
+          ^
+% Invalid input detected at '^' marker.
+
+wmtech#        quit
