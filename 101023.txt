@@ -1,0 +1,9 @@
+                                                                                            Spanning-Tree
+
+
+https://szit.hu/doku.php?id=oktatas:halozat:cisco:redundans_kapcsolok
+_________________________________________________________________________________
+https://www.geeksforgeeks.org/what-is-bpdu-guard-and-how-to-configure-bpdu-guard/
+________________________________________________________________________________
+
+
