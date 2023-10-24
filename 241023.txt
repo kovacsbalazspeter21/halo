@@ -1,0 +1,49 @@
+                                                                                        L3 Redundancia
+
+https://community.cisco.com/t5/networking-knowledge-base/hsrp-overview-and-basic-configuration/ta-p/3131590
+https://irh.inf.unideb.hu/~cisco/cisco/doku.php?id=srwe:09._fejezet_-_fhrp_alapfogalmak
+https://www.youtube.com/watch?v=CtZ81OvJxlI
+
+R---R
+|   |                                            FHRP
+SW  |                                            First Hop Redundancy Protocol
+|   |
+SW  |                                            Cisco forrású: HSRP (Hot Standby Redundancy Protocol)
+|   |                                                           GLBP (Gateway Load Balancing Protocol)
+SW  |                                            Nyílt forrású: VRRP (Virtual Router Redundancy Protocol)
+|   |
+-----
+              [@]
+               |
+10.1.1.254     |       10.1.1.253
+____MAC___________________MAC__
+|                            |    IP
+|  R   virtualisR    R       |    MAC
+|         10.1.1.1           |
+____________MAC_______________
+    |       
+   SW _______________                                                                                                                                      !ACTIVE!
+  |     |      |    |
+  PC    PC    PC    PC                                                                                int g0/0                                            int g0/0
+                                                                                                        ip address 10.1.1.254  netmask2                      ip address 10.1.1.253
+                                                                                                        standby ip 10.1.1.1    \                         /   standby ip 10.1.1.1
+                                                                                                        priority 100            -   Virtuális Router    -    priority 150
+                                                                                                        preemt                 /                         \   preemt
+                                                                                                        
+                                                                                                        
+                                                                                                        HSRP (Hot Standby Redundancy Protocol)
+                                                                                                        
+                                                                                                                     [@]
+                                                                                                                      |
+                                                                                                                      |
+                                                                                                           __________________________           
+                                                                                                          /           |              \
+                                                                                                    [ACTIVE]     (VIRUALIS_R)     [STANDBY]
+                                                                                                          \           |               /
+                                                                                                            __________________________
+                                                                                                                      |
+                                                                                                                    [SW]
+                                                                                                                      |
+                                                                                                                ____________    
+                                                                                                              /    /    \    \     
+                                                                                                            PC    PC    PC    PC
