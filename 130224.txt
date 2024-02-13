@@ -1,0 +1,10 @@
+                                                                          Routing
+                                                      Static                                  Dynamic
+                                                      -                                        - táv vezérls
+                                                      -                                        - irány vektor
+                                                      -                                        - kapcsolat alapú
+
+                                          Standard Static route      teljesen határozott route  def route  lebegő route
+                                          
+                                         ip route 192.168.1.0 255.255.255.0        192.168.2.18
+                                         ip route 10.1.1.0 255.255.255.0 1192.168.2.18
