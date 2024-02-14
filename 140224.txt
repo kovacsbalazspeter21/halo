@@ -1,0 +1,7 @@
+Routing tábla:
+  - közvetlen csatolt hálózatok, helyi ethernet
+  - Statikus route bejegyzések
+  - Dinamikus route bejegyzések
+  - TTL
+
+  
