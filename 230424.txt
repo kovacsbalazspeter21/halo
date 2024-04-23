@@ -1,0 +1,4 @@
+https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/serconf.html
+
+https://networklessons.com/cisco/ccna-routing-switching-icnd1-100-105/how-to-configure-router-on-a-stick
+
